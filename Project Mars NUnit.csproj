@@ -11,10 +11,46 @@
 
   <ItemGroup>
     <None Remove="TestData\AddEducation.json" />
+    <None Remove="TestData\AddMultipleEntries.json" />
+    <None Remove="TestData\CancelAction.json" />
+    <None Remove="TestData\DuplicateEntry.json" />
+    <None Remove="TestData\EditEntry.json" />
+    <None Remove="TestData\EmptyDegreeField.json" />
+    <None Remove="TestData\EmptyUniversityField.json" />
+    <None Remove="TestData\EmptyYearField.json" />
+    <None Remove="TestData\GraduationYearEarliest.json" />
+    <None Remove="TestData\GraduationYearLatest.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="TestData\AddEducation.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddMultipleEntries.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CancelAction.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DuplicateEntry.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EditEntry.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EmptyDegreeField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EmptyUniversityField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EmptyYearField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\GraduationYearEarliest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\GraduationYearLatest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

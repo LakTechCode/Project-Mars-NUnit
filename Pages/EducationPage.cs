@@ -24,6 +24,11 @@ namespace Project_Mars_NUnit.Pages
         private readonly By DegreeInput = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[2]/div[2]/input");
         private readonly By YearDropdown = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[2]/div[3]/select");
         private readonly By AddButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[3]/div/input[1]");
+        private readonly By CancelButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[3]/div/input[2]");
+        private readonly By EditButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td[6]/span[1]/i");
+        private readonly By DegreeField = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td/div[2]/div[2]/input");
+        private readonly By UpdateButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td/div[3]/input[1]");
+        private readonly By DeleteButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td[6]/span[2]/i");
 
         public EducationPage(IWebDriver driver) // Inject IWebDriver directly
         {
@@ -104,14 +109,54 @@ namespace Project_Mars_NUnit.Pages
 
         public string GetSuccessMessage()
         {
-            return _driver.FindElement(By.XPath("/html/body/div[1]/div")).Text; 
+            return _driver.FindElement(By.XPath("/html/body/div[1]/div")).Text;
+        }
+        public void ClickCancel()
+
+        {
+            var cancelButtonElement = _wait.Until(ExpectedConditions.ElementToBeClickable(CancelButton));
+            cancelButtonElement.Click();
+        }
+
+        public bool IsEducationInList(string education)
+        {
+            return Driver.FindElements(By.XPath($"//div[text()='{education}']")).Any();
+
+        }
+
+        public void ClickEdit()
+        {
+            var editButtonElement = _wait.Until(ExpectedConditions.ElementToBeClickable(EditButton));
+            editButtonElement.Click();
+        }
+
+        public void ClearDegreeField()
+        {
+            var degreeField = _wait.Until(ExpectedConditions.ElementToBeClickable(DegreeField));
+            degreeField.Clear();
+        }
+
+        public void UpdateDegree(string degree)
+        {
+            var degreeField = _wait.Until(ExpectedConditions.ElementToBeClickable(DegreeField));
+            degreeField.SendKeys(degree);
+
+        }
+
+        public void ClickUpdate()
+        {
+            var updateButton = _wait.Until(ExpectedConditions.ElementToBeClickable(UpdateButton));
+            updateButton.Click();
+
+        }
+
+        public void ClickDelete()
+        {
+            var deleteButton = _wait.Until(ExpectedConditions.ElementToBeClickable(DeleteButton));
+            deleteButton.Click();
+
         }
 
 
     }
-
-
-
-
-
 }

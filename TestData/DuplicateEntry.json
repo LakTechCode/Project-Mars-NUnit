@@ -1,0 +1,19 @@
+[
+  {
+    "CollegeName": "PSG College of Arts and Science",
+    "Country": "India",
+    "Title": "B.Sc",
+    "Degree": "Microbiology",
+    "Year": "2015",
+    "ExpectedMessage": "Education has been added"
+  },
+
+  {
+    "CollegeName": "PSG College of Arts and Science",
+    "Country": "India",
+    "Title": "B.Sc",
+    "Degree": "Microbiology",
+    "Year": "2015",
+    "ExpectedMessage": "This information is already exist."
+  }
+]

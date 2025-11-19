@@ -3,7 +3,5 @@
   "Country": "India",
   "Title": "B.Sc",
   "Degree": "Microbiology",
-  "Year": "2015",
-  "ExpectedMessage": "Education has been added"
+  "ExpectedMessage": "Please enter all the fields"
 }
-
