@@ -26,7 +26,7 @@ namespace Project_Mars_NUnit.Pages
         private readonly By AddButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[3]/div/input[1]");
         private readonly By CancelButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[3]/div/input[2]");
         private readonly By EditButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td[6]/span[1]/i");
-        private readonly By DegreeField = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td/div[2]/div[2]/input");
+        private readonly By UpdateDegreeField = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td/div[2]/div[2]/input");
         private readonly By UpdateButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td/div[3]/input[1]");
         private readonly By DeleteButton = By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td[6]/span[2]/i");
 
@@ -132,13 +132,13 @@ namespace Project_Mars_NUnit.Pages
 
         public void ClearDegreeField()
         {
-            var degreeField = _wait.Until(ExpectedConditions.ElementToBeClickable(DegreeField));
+            var degreeField = _wait.Until(ExpectedConditions.ElementToBeClickable(UpdateDegreeField));
             degreeField.Clear();
         }
 
         public void UpdateDegree(string degree)
         {
-            var degreeField = _wait.Until(ExpectedConditions.ElementToBeClickable(DegreeField));
+            var degreeField = _wait.Until(ExpectedConditions.ElementToBeClickable(UpdateDegreeField));
             degreeField.SendKeys(degree);
 
         }

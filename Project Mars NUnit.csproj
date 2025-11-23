@@ -10,20 +10,44 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TestData\AddCertification.json" />
     <None Remove="TestData\AddEducation.json" />
+    <None Remove="TestData\AddMultipleCertifications.json" />
     <None Remove="TestData\AddMultipleEntries.json" />
     <None Remove="TestData\CancelAction.json" />
+    <None Remove="TestData\CancelCertification.json" />
     <None Remove="TestData\DuplicateEntry.json" />
+    <None Remove="TestData\DuplicateEntryCertification.json" />
+    <None Remove="TestData\EditCertificationEntry.json" />
     <None Remove="TestData\EditEntry.json" />
+    <None Remove="TestData\EmptyCertificateField.json" />
+    <None Remove="TestData\EmptyCertificationYearField.json" />
     <None Remove="TestData\EmptyDegreeField.json" />
+    <None Remove="TestData\EmptyInstitutionField.json" />
     <None Remove="TestData\EmptyUniversityField.json" />
     <None Remove="TestData\EmptyYearField.json" />
     <None Remove="TestData\GraduationYearEarliest.json" />
+    <None Remove="TestData\GraduationYearEarliestCertification.json" />
     <None Remove="TestData\GraduationYearLatest.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="TestData\DuplicateEntryCertification.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EditCertificationEntry.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\AddCertification.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\AddEducation.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddMultipleCertifications.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\AddMultipleEntries.json">
@@ -32,13 +56,25 @@
     <Content Include="TestData\CancelAction.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\CancelCertification.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\DuplicateEntry.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\EditEntry.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\EmptyCertificateField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EmptyCertificationYearField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\EmptyDegreeField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EmptyInstitutionField.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\EmptyUniversityField.json">
@@ -48,6 +84,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\GraduationYearEarliest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\GraduationYearEarliestCertification.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\GraduationYearLatest.json">
