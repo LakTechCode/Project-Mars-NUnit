@@ -1,0 +1,19 @@
+[
+  {
+    "CollegeName": "PSG College of Arts and Science",
+    "Country": "India",
+    "Title": "B.Sc",
+    "Degree": "Microbiology",
+    "Year": "2015",
+    "ExpectedMessage": "Education has been added"
+  },
+
+  {
+    "CollegeName": "Oxford",
+    "Country": "United Kingdom",
+    "Title": "M.B.A",
+    "Degree": "HR",
+    "Year": "2018",
+    "ExpectedMessage": "Education has been added"
+  }
+]
